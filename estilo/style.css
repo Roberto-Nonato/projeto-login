@@ -64,7 +64,7 @@ main{
     border: 0px;
     position:relative;
     left: 3px;
-    transform: translateY(-9px);
+    transform: translateY(-10px);
 }
 .campo > p > input:focus-within{
     background-color: white;
@@ -75,7 +75,7 @@ margin-bottom: 5px;
 padding: 5px;
 border-radius: 5px;
 width: 100%;
-height: 44px;
+height: 42px;
 
 }
 input[type=submit]{
