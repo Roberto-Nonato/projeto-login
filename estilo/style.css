@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body, html{
+    background-color: rgb(102, 37, 163);
+    height: 100vh;
+    width: 100vw;
+}
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    
+}
+#login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: white;
+    height: 500px;
+    width: 262px;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 10;
+    box-shadow: 0px 0px 10px black;
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
+    transform: translate(-50%, -50%);
+}
+#login > #imagem{
+    display: block;
+    background:  rgb(102, 37, 163) url(../imagens/pexels-scottwebb-305828.jpg) no-repeat;
+    height: 200px;
+    background-size:cover ;
+    background-position: right bottom;
+}
+#login > #formulario{
+    display: block;
+    padding: 10px;
+}
+#formulario > p{
+    margin-bottom: 10px;
+}
+.campo > p > label {
+    display: none;
+}
+.campo > p > span {
+    color: white;
+    font-size: 2em;
+    width: 40px;
+}
+.campo > p > input{
+    background-color: #92eeeb;
+    font-size: 1em;
+    width: calc(100% - 45px);
+    height: 38px;
+    border-radius: 8px;
+    padding: 4px;
+    border: 0px;
+    position:relative;
+    left: 5px;
+    transform: translateY(-10px);
+}
+.campo > p > input:focus-within{
+    background-color: white;
+}
+form > .campo{
+background-color: rgb(102, 37, 163) ;
+margin-bottom: 5px;
+padding: 5px;
+border-radius: 5px;
+width: 100%;
+height: 40px;
+
+}
+input[type=submit]{
+    background-color: #49a09d;
+    color: white;
+    border-radius: 5px;
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    margin-top: 5px; 
+    cursor: pointer;
+}
+input[type=submit]:hover{
+    background-color: #306b69;
+}
+form > a.botão{
+    color:#195f5e;
+    display: block;
+    margin-top: 5px;
+    text-align: center;
+    border: solid 1px black;
+    font-size: 1em;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+    width: 100%;
+    height: 40px;
+}
+.botão>span{
+    font-size: 1em;
+    text-indent: 5px;
+}
+.botão:hover{
+    background-color: #21dfd8;
+}
